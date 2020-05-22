@@ -3,15 +3,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Post Detail</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
-<h1>Home Test</h1>
-<ul>
-    {% for post in all_posts %}
-        <li> {{ post.text }} </li>
-    {% endfor %}
-</ul>
+    <h1>Post Detail</h1>
+    <h2>{{ post.text }}</h2>
 </body>
 </html>
